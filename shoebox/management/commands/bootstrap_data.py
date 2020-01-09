@@ -6,12 +6,12 @@ class Command(BaseCommand):
 
     def shoe_color(self):
         for pick_color in ShoeColor.color:
-            ShoeColor.objects.create(color = color[1])
+            ShoeColor.objects.create(color = pick_color[0])
     
     
     def shoe_type(self):
         for type in ShoeType.shoe_type:
-            ShoeType.objects.create(style = style[1])
+            ShoeType.objects.create(style = type[0])
 
     def add(self, *arg, **kwargs):
         self.shoe_color()
