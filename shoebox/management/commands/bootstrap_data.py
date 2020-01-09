@@ -13,7 +13,7 @@ class Command(BaseCommand):
         for type in ShoeType.shoe_type:
             ShoeType.objects.create(style = type[0])
 
-    def add(self, *arg, **kwargs):
+    def handle(self, *args, **kwargs):
         self.shoe_color()
         self.shoe_type()
         
