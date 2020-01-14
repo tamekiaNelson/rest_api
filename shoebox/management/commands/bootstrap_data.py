@@ -5,7 +5,7 @@ class Command(BaseCommand):
     help ='What is the shoe type and color'
 
     def shoe_color(self):
-        for pick_color in ShoeColor.color:
+        for pick_color in ShoeColor.shoe_color:
             ShoeColor.objects.create(color = pick_color[0])
     
     
